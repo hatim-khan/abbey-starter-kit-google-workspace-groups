@@ -9,8 +9,8 @@ terraform {
 }
 
 locals {
-  account_name = hatim-khan
-  repo_name = abbey-starter-kit-google-workspace-groups
+  account_name = 'hatim-khan'
+  repo_name = 'abbey-starter-kit-google-workspace-groups'
 
   project_path = "github://${local.account_name}/${local.repo_name}"
   policies_path = "${local.project_path}/policies"
@@ -18,7 +18,7 @@ locals {
 }
 
 resource "googleworkspace_group" "google_workspace_demo" {
-  email       = "google-workspace-groups-demo@arvil.co"
+  email       = "google-workspace-groups-demo-v2@arvil.co"
 }
 
 resource "abbey_grant_kit" "googleworkspace" {
