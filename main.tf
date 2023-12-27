@@ -21,8 +21,8 @@ resource "googleworkspace_group" "google_workspace_demo" {
   email       = "google-workspace-groups-demo-v2@arvil.co"
 }
 
-resource "abbey_grant_kit" "googleworkspace" {
-  name = "GoogleWorkspace"
+resource "abbey_grant_kit" "googleworkspace_v2" {
+  name = "googleworkspace_v2"
   description = <<-EOT
     Grants access to Abbey's GoogleWorkspace Group for the Quickstart.
   EOT
