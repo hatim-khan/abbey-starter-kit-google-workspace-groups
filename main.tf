@@ -9,8 +9,8 @@ terraform {
 }
 
 locals {
-  account_name = ""
-  repo_name = ""
+  account_name = hatim-khan
+  repo_name = abbey-starter-kit-google-workspace-groups
 
   project_path = "github://${local.account_name}/${local.repo_name}"
   policies_path = "${local.project_path}/policies"
